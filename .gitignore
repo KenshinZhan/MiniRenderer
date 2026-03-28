@@ -1,41 +1,60 @@
-# Prerequisites
-*.d
+# --- Visual Studio 临时文件和生成输出 ---
+# 排除总的生成目录
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Xx]64/
+[Xx]86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# 排除中间层文件夹
+Generated\ Files/
+ipch/
+*.aps
+*.odl
+*.rc2
+*.pyc
+
+# --- 编译产生的特定后缀文件 ---
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
+*.sbr
+*.tlog
+*.lastbuildstate
+*.idb
 *.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+*.ilk
+*.exp
+*.res
+*.pch
 *.lib
-
-# Executables
+*.dll
 *.exe
-*.out
-*.app
+*.iobj
+*.ipdb
 
-# debug information files
-*.dwo
+# --- Visual Studio 自动生成的项目文件与缓存 ---
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docattachments
+*.VC.db
+*.VC.opendb
+
+# --- 单元测试相关 ---
+TestResults/
+_CPack_Packages/
+
+# --- 外部依赖与 NuGet ---
+packages/
+vcpkg_installed/
+*.nuget.props
+*.nuget.targets
+
+# --- CMake 产生的中间文件 (如果你使用 CMake) ---
+CMakeSettings.json
+CMakeBuild/
+out/
+build/
